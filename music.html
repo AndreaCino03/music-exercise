@@ -67,6 +67,7 @@
         </div>
     </main>
     <script>
+        console.log("cazzo");
         const audio = document.getElementById('musicPlayer');
         const volumeIcon = document.getElementById('volumeIcon');
         const playPauseIcon = document.getElementById('playPauseIcon');
@@ -76,7 +77,6 @@
         const restartSong = document.getElementById('restartSongIcon');
         const nextSong = document.getElementById('nextSong');
         const previusSong = document.getElementById('previusSong');
-        consol.log("cazzo");
         let songs = [
             {
             "title": "Knocking on Heavens Door",
@@ -287,7 +287,6 @@
             
             songIndex--;
             if(songIndex < 0) songIndex = 2;
-            console.log(songIndex);
 
             document.getElementById('musicPlayer').src = songs[songIndex].audio_file;
             document.getElementById('songGif').src = songs[songIndex].gif;
